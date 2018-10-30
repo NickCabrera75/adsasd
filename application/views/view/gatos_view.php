@@ -1,4 +1,4 @@
-			<section class="banner-area relative" id="home">	
+	<section class="banner-area relative" id="home">	
 				<div class="overlay overlay-bg"></div>
 				<div class="container">				
 					<div class="row d-flex align-items-center justify-content-center">
@@ -18,7 +18,7 @@
 
                             foreach ($animales->result() as $row)
                             {
-                                if (($row->Tipo)==1)
+                                if (($row->Tipo)==0)
 {
                          ?>
 			
@@ -75,4 +75,3 @@
 					</div>
 				</div>	
 			</section>
-			<!-- End calltoaction Area -->									
