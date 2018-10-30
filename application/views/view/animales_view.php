@@ -12,7 +12,7 @@
                 <p class="text-white sub-head">
                     Una vida que rescatas es una vida que salvas. ¡ADOPTA!
                 </p>
-                <a href="<?php echo base_url(); ?>usuario" class="primary-btn header-btn text-uppercase">Encuentra una mascota para adoptar</a>
+                <a href="<?php echo base_url(); ?>perrosgatos" class="primary-btn header-btn text-uppercase">Encuentra una mascota para adoptar</a>
             </div>
         </div>
     </div>
@@ -51,7 +51,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="single-process">
                     <span class="lnr lnr-user"></span>
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#iniciasesion">
                         <h4>
                             Registrarse\Iniciar Sesion
                         </h4>
@@ -64,7 +64,7 @@
             <div class="col-lg-3 col-md-6">
                 <div class="single-process">
                     <span class="lnr lnr-thumbs-up"></span>
-                    <a href="#">
+                    <a href="<?php echo base_url(); ?>perrosgatos">
                         <h4>
                             Selección de mascotas
                         </h4>

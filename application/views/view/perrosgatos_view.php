@@ -1,12 +1,12 @@
-	<section class="banner-area relative" id="home">	
+<section class="banner-area relative" id="home">	
 				<div class="overlay overlay-bg"></div>
 				<div class="container">				
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Gatos				
+								Mascotas				
 							</h1>	
-							<p class="text-white link-nav"><a href="<?php echo base_url(); ?>index.php/animales">Inicio </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?php echo base_url(); ?>gatos"> Gatos</a></p>
+							<p class="text-white link-nav"><a href="<?php echo base_url(); ?>animales">Inicio </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?php echo base_url(); ?>perrosgatos"> Todas las mascotas</a></p>
 						</div>	
 					</div>
 				</div>
@@ -18,8 +18,8 @@
 
                             foreach ($animales->result() as $row)
                             {
-                                if (($row->Tipo)==0)
-{
+                               
+
                          ?>
 			
 			
@@ -54,7 +54,7 @@
 			</section>
                        
                         <?php
-                            } }
+                            } 
                         ?><br>
 			<!-- End cat-list Area -->
 					

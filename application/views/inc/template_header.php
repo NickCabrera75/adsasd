@@ -64,7 +64,7 @@
           ?>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-inverse" data-toggle="modal" data-target="#crearcuenta">
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#crearcuenta">
 
                     <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">

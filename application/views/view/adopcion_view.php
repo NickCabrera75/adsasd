@@ -1,25 +1,27 @@
-	<section class="banner-area relative" id="home">	
+
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">	
 				<div class="overlay overlay-bg"></div>
 				<div class="container">				
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Gatos				
+								Adopci&oacute;n				
 							</h1>	
-							<p class="text-white link-nav"><a href="<?php echo base_url(); ?>index.php/animales">Inicio </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?php echo base_url(); ?>gatos"> Gatos</a></p>
+							<p class="text-white link-nav"><!--<a href="<?php echo base_url(); ?>animales">Inicio </a>  <span class="lnr lnr-arrow-right"></span>-->  <a href="<?php echo site_url('usuario/panel'); ?>">  <?php
+  
+  echo "Perfil de ".$this->session->userdata('login');
+  ?></a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?php echo base_url(); ?>adopcion"> Adopci&oacute;n</a></p>
 						</div>	
 					</div>
 				</div>
 			</section><br>
-			<!-- End banner Area -->	
-				
-			<!-- Start cat-list Area -->
-		<?php
-
+			<!-- End banner Area -->
+			<!-- Start home-about Area -->
+			<?php
                             foreach ($animales->result() as $row)
                             {
-                                if (($row->Tipo)==0)
-{
                          ?>
 			
 			
@@ -46,7 +48,7 @@
 							<label class="text-uppercase text-<?php if (($row->Estado)==0){echo 'success';} else{echo 'danger';}?>"> <?php if (($row->Estado)==0){echo 'Disponible para ser adoptado';} else{echo 'El animal ya fue adoptado';}?></label>
                             <?php if (($row->Estado)==0){echo '<div class="col-lg-8 callto-top-right">
 								<a  data-toggle="modal" data-target="#formadopcion" href=""   class="primary-btn">Llene el formulario para adoptar</a>
-							</div>';}?><br>
+							</div>';}?>
 														
 						</div>
 					</div>
@@ -54,24 +56,9 @@
 			</section>
                        
                         <?php
-                            } }
-                        ?><br>
-			<!-- End cat-list Area -->
-					
-
-			<!-- Start calltoaction Area -->
-			<section class="calltoaction-area section-gap relative">
-				<div class="container">
-					<div class="overlay overlay-bg"></div>						
-					<div class="row align-items-center justify-content-center">
-						<h1 class="text-white">¿Desea ayudar? Registrese</h1>
-						<p class="text-white">
-							Adoptando una mascota su vida puede cambiar. Porque adoptando da una nueva oportunidad de ser feliz a un angel que necesita cariño.
-						</p>
-						<div class="buttons d-flex flex-row">
-							<a href="#" class="primary-btn text-uppercase" data-toggle="modal" data-target="#iniciasesion">Iniciar Sesion</a>
-							<a href="#" class="primary-btn text-uppercase" data-toggle="modal" data-target="#crearcuenta">Registrese ahora</a>
-						</div>
-					</div>
-				</div>	
-			</section>
+                            }
+                        ?>
+			
+			
+            <br />
+     

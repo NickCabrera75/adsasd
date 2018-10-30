@@ -57,7 +57,10 @@ public function __construct(){
     if($this->session->userdata('login'))
             {
 
-              $this->load->view('panel_view');
+              
+    $this->load->view('inc/template_headerLogueado');
+    $this->load->view('view/panel_view');
+    $this->load->view('inc/template_footer');
             }
         else
             {

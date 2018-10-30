@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Adopcion extends CI_Controller {
+class Perrosgatos extends CI_Controller {
   public function __construct()
   {
     parent::__construct();
@@ -8,11 +8,10 @@ class Adopcion extends CI_Controller {
   }
   public function index()
   {
-    $listaanimales=$this->animales_model->listaanimales();
+   $listaanimales=$this->animales_model->listaanimales();
     $data['animales']=$listaanimales;
-     $this->load->view('inc/template_headerLogueado');
-    $this->load->view('view/adopcion_view',$data);
+    $this->load->view('inc/template_header');
+    $this->load->view('view/perrosgatos_view',$data);
     $this->load->view('inc/template_footer');
   }
-
 }
