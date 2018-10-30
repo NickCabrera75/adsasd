@@ -1,30 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name = "google-signin-client_id" content = " 853125276965-3ju64lg6gj4m3dv1mqb8ldfmcgoujo5n.apps.googleusercontent.com ">
-    <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/img/fav.png">
+    
     <title>Salva tu mascota</title>
     <?php include("templates/template_head.php"); ?>
-    <script>
-    (function(d,s,id)
-    {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if(d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "http://connect.facebook.net/es_ES/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    window.fbAsyncInit = function()
-    {
-        FB.init({
-            appId    : '1821980271233259',
-            cookie   : true,
-            xfbml    : true,
-            version  : 'v2.0'
-        });
-    }
-</script>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
+    
+
 </head>
 <body>
     <div id="iniciasesion" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="display: none;" aria-hidden="true">
@@ -270,7 +251,7 @@
             </div>
         </div>
     </div>
-</div><br>
+</div>
 <header id="header" id="home">
     <div class="container main-menu">
         <div class="row align-items-center justify-content-between d-flex">
@@ -291,7 +272,7 @@
                             </font>
                         </a></li>
 
-                    <li><a href="" data-toggle="modal" data-target="#crearcuenta"> <span class="btn-label"><i class="fa fa-ellipsis-v"></i>
+                    <li><a href="" data-toggle="modal" data-target="#crearcuenta"> <span class="btn-label"><i class="fa fa-user"></i>
                             </span>
                             <font style="vertical-align: inherit;">
                                 <font style="vertical-align: inherit;">
