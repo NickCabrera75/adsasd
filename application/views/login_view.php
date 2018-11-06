@@ -53,7 +53,7 @@
 
           <div class="container-login100-form-btn">
             <button class="login100-form-btn" type="submit">
-              Inicia Sesion
+              Inicia Sesion 2
             </button>
 
           </div>
