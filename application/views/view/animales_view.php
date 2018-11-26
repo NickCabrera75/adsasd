@@ -1,4 +1,3 @@
-<!--inicia sesion-->
 
 <section class="banner-area relative" id="home">
     <div class="container">
@@ -105,7 +104,8 @@
     </div>
 </section>
 
-<br><br>
+
+
 <section class="video-area section-gap">
 
     <div class="container">
@@ -114,18 +114,16 @@
 
             <div class="col-lg-8">
                 <div class="description">
-                    <h4>Videos</h4>
+                    <h4>Video</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                        Ellos no te abandonaran jam&aacute;s, NO NOS DEJES!
                     </p>
                 </div>
                 <div class="about-video-right justify-content-center align-items-center d-flex relative">
-
                     <div class="overlay overlay-bg"></div>
 
-                    <a class="play-btn" href="https://www.youtube.com/watch?v=lPe4vmjY6Fk"><img class="img-fluid mx-auto" src="<?php echo base_url(); ?>assets/img/play-btn.png" alt=""></a>
+                    <a class="play-btn" href="<?php echo base_url(); ?>videos/video01.mp4"><img class="img-fluid mx-auto" src="<?php echo base_url(); ?>assets/img/play-btn.png" alt=""></a>       
                 </div>
-
             </div>
         </div>
     </div>
