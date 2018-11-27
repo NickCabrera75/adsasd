@@ -36,10 +36,11 @@
                             </form>-->
                         </div>
                         <div class="single-sidebar-widget user-info-widget">
-                            <img src="<?php echo base_url(); ?><?php
+                            
+                            <img src="<?php echo base_url(); ?>images/usuarios/<?php
   
    echo $this->session->userdata('Imagen')
-  ?>" alt="PROXIMAMENTE">
+  ?>" alt="imposible mostrar su foto">
                             <a href="#"><h4> <?php
   
   if   ( $this->session->userdata('tipo')=='1')

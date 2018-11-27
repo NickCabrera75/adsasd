@@ -156,13 +156,14 @@
 								<a  href="<?php echo base_url(); ?>adopcion"   class="primary-btn">Todos</a>
     <a  href="<?php echo base_url(); ?>adopcionperros"   class="primary-btn">Perros</a>
     <a   href="<?php echo base_url(); ?>adopciongatos"   class="primary-btn">Gatos</a>
-							</div><br>
+							</div><br><br><br>
 
 			<?php
                         
                             foreach ($animales->result() as $row)
                             {
-                                
+                                if (($row->Tipo)==1)
+                                {
                          ?>
                                 
 			
@@ -197,7 +198,7 @@
 			</section>
                        
                         <?php
-                            }
+                            }}
                         ?>
 			
 			

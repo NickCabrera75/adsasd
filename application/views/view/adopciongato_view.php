@@ -162,7 +162,8 @@
                         
                             foreach ($animales->result() as $row)
                             {
-                                
+                                if (($row->Tipo)==0)
+                                {
                          ?>
                                 
 			
@@ -197,7 +198,7 @@
 			</section>
                        
                         <?php
-                            }
+                            }}
                         ?>
 			
 			

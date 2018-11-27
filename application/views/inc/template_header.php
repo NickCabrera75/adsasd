@@ -112,6 +112,9 @@
 
                     </div>
                     <div class="panel-body">
+                         <h5>Foto de perfil</h5>
+
+                        <input type="file" name="imagenes" id="imagenes">
                         <div class="form-group">
                             <label class="control-label">Nombres *</label>
                             <input name="Nombres" class="form-control" required type="text" data-parsley-id="1099">
@@ -140,9 +143,7 @@
                                 <li class="parsley-required">Nota: con esto iniciaras session</li>
                             </ul>
                         </div>
-                        <h5>(PROXIMAMENTE) Foto de perfil</h5>
-
-                        <input type="file" name="Imagen" accept="images/usuarios/*.jpg ">
+                       
                         <div class="form-group">
                             <label class="control-label">Password *</label>
                             <input name="password" class="form-control" id="id-password" required="" type="password" data-parsley-id="1497">
