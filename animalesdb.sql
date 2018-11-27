@@ -1,5 +1,5 @@
 ﻿# Host: localhost:33065  (Version 5.5.5-10.1.36-MariaDB)
-# Date: 2018-11-26 22:37:52
+# Date: 2018-11-27 01:57:07
 # Generator: MySQL-Front 6.1  (Build 1.26)
 
 
@@ -67,15 +67,15 @@ CREATE TABLE `usuarios` (
   `login` varchar(45) COLLATE latin1_spanish_ci NOT NULL DEFAULT '',
   `password` varchar(45) COLLATE latin1_spanish_ci NOT NULL DEFAULT '',
   `tipo` varchar(45) COLLATE latin1_spanish_ci NOT NULL DEFAULT '1',
-  `Imagen` varchar(255) COLLATE latin1_spanish_ci DEFAULT NULL,
+  `Imagen` varchar(255) COLLATE latin1_spanish_ci DEFAULT './images/usuarios/',
   PRIMARY KEY (`idusuarios`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
 #
 # Data for table "usuarios"
 #
 
-INSERT INTO `usuarios` VALUES (1,'Fernanda','Fernandez','Gomez','Fernanda@gmail.com','Fernanda','c39c312bd5c05f538f86b20befa9a3ef','1','images/usuarios/Fernanda.jpg'),(3,'','',NULL,'','error','cb5e100e5a9a3e7f6d1fd97512215282','',NULL),(4,'Victor','Sullcani','Mendoza','vikus@email.com','vhugosm','9a0bb434854088f62f84805592b0c469','1',NULL),(5,'Nick','Cabrera','Bergas','nicke@gmail.com','nike','41fd220f05ed0d8c56e3b83af87d45d7','1',NULL),(27,'Rene','Perez','','rene@email.com','rene','93de1a7f9a00f8823ac377738b66236b','1',NULL);
+INSERT INTO `usuarios` VALUES (40,'Pedro','Perez','Gonzalez','pg@mail.com','pedro','c6cc8094c2dc07b700ffcc36d64e2138','1','ebd799f812df859d57c693bb4036e47e.png'),(42,'Sofia','Vergara','Molina','Molina@mail.com','sofia','17da1ae431f965d839ec8eb93087fb2b','1','5ac8c83fd4d0f8bddbf877a6f51dda35.jpg');
 
 #
 # Structure for table "tarjeta"
