@@ -4,7 +4,7 @@
     
     <title>Salva tu mascota</title>
     <?php include("templates/template_head.php"); ?>
-    <script> src="main.js"</script>
+    
 
 </head>
 <body>

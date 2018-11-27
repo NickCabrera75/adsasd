@@ -9,6 +9,7 @@
 <script src="<?php echo base_url(); ?>assets/js/jquery.magnific-popup.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/owl.carousel.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/jquery.nice-select.min.js"></script>
+<script> src="<?php echo base_url(); ?>assets/js/main.js"</script>
 <script src="<?php echo base_url(); ?>assets/js/mail-script.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/main.js"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
