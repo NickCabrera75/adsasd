@@ -14,6 +14,7 @@
 			<!-- End banner Area -->	
 				
 			<!-- Start cat-list Area -->
+
 		<?php
 
                             foreach ($animales->result() as $row)
