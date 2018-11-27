@@ -56,7 +56,7 @@
                         </h4>
                     </a>
                     <p>
-                        Iniciar session con tu usuario y contrasenia/ llenar el formulario y registrarse
+                        Iniciar sesion con tu usuario y contraseña/ llenar el formulario y registrarse
                     </p>
                 </div>
             </div>

@@ -78,7 +78,7 @@
               Crear Cuenta
             </a><br>
             <a href="<?php echo base_url(); ?>index.php/animalesinvitado" class="txt3">
-              Entar sin iniciar sesion
+              Entrar sin iniciar sesion
             </a>
           </div>
         </div>

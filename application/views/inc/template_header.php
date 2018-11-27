@@ -230,7 +230,7 @@
                                 Calle: Ushpa Ushpa<br>
                                 Telefono: 4264545
                                 Celular: 75464063
-                            </p> 
+                            </p>
                         </div>
                     </div>
 
@@ -244,7 +244,7 @@
                                 Telefono: 4265645
                                 Celular: 70356236
                                 Pagina: <a href="http://www.cerecan.org" >http://www.cerecan.org</a>
-                            </p> 
+                            </p>
                         </div>
                     </div>
                 </div>

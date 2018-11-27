@@ -6,7 +6,7 @@
                 <div class="single-footer-widget">
                     <h6>Acerca de</h6>
                     <p>
-                        Este es un sitio web sin fines de lucro dedicada a la adopcion de animales abandonados, maltratados y con problemas de salud. Fundada en el año 2018 con la visión principal ayudar a los animalitos.
+                        Este es un sitio web sin fines de lucro dedicada a la adopción de animales abandonados, maltratados y con problemas de salud. Fundada en el año 2018 con la visión principal dar una vida mejor para los animales.
                     </p>
                 </div>
             </div>
@@ -16,7 +16,7 @@
                     <div class="row">
                         <ul class="col footer-nav">
                             <li>Animales SOS interviene en este caso</li>
-                            <li>Un solo dia y 17vidas en condicion critica</li>
+                            <li>Un solo dia y 17 vidas en condicion critica</li>
 
                         </ul>
                     </div>
