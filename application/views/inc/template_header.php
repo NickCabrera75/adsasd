@@ -4,7 +4,7 @@
     
     <title>Salva tu mascota</title>
     <?php include("templates/template_head.php"); ?>
-    
+    <script> src="main.js"</script>
 
 </head>
 <body>
@@ -56,7 +56,6 @@
                             <br />
                             <div class="panel-footer">
                                 <button class="btn btn-Default" type="submit">Inicia Sesion</button>
-                                
                                 <fb:login-button scope="public_profile,email" onlogin="validarUsuario();"></fb:login-button><br>
 
                                 <google:login-button class="g-signin2" data-onsuccess="onSignIn"></google:login-button>
@@ -205,10 +204,20 @@
                     </span>
                 </button>
             </div><br>
+            
+            <div class="container">
+                <select id="select" name="select">
+                    <option value="">Seleccione Ciudad</option>
+                    <option value="Cochabamba">Cochabamba</option>
+                    <option value="LaPaz">La Paz</option>
+                    <option value="SantaCruz">Santa Cruz</option>
+                </select>
+            </div><br>
+            
 
             <div class="container">
-                <div class="row container">
-                    <div class="card chosen-container" style="width:215px">
+                <div class="row container" id="centros">
+                    <div class="card chosen-container" style="width:215px" id="Cochabamba">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3807.5698043407774!2d-66.14991406569172!3d-17.384421688357513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sbo!4v1540896008698" width="210" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
                         <div class="card-body">
                             <h4 class="card-title">Patitas Descalzas</h4>
@@ -216,13 +225,13 @@
                                 Ciudad: Cochabamba
                                 Calle: Paccieri, Ismael Vasquez<br>
                                 Telefono: 4264578
-                                Celular: 79788234
+                                Celular/WhatsApp: 79788234<br>
                                 Pagina: <a href="http://www.patitasdescalzas.com.bo" >http://www.patitasdescalzas.com.bo</a>
                             </p>
-                        </div> 
+                        </div>
                     </div>
 
-                    <div class="card chosen-container" style="width:215px">
+                    <div class="card chosen-container" style="width:215px" id="LaPaz">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.728244110488!2d-66.10878447762143!3d-17.472716389453904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e371d87a0b8b95%3A0x36f1b676a6071bb6!2sCentro+De+Adopciones+San+Martin+De+Porres!5e0!3m2!1ses!2sbo!4v1540896860692" width="210" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
                         <div class="card-body">
                             <h4 class="card-title">Centro de Adopciones San Martin de Porres</h4>
@@ -230,12 +239,12 @@
                                 Ciudad: Cochabamba
                                 Calle: Ushpa Ushpa<br>
                                 Telefono: 4264545
-                                Celular: 75464063
+                                Celular/WhatsApp: 75464063<br>
                             </p>
                         </div>
                     </div>
 
-                    <div class="card chosen-container" style="width:215px">
+                    <div class="card chosen-container" style="width:215px" id="SantaCruz">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7614.678526312893!2d-66.27435962768658!3d-17.395498901365528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbo!4v1540898885952" width="210" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
                         <div class="card-body">
                             <h4 class="card-title">Centro de Rehabilitación Canina</h4>
@@ -243,7 +252,7 @@
                                 Ciudad: Cochabamba
                                 Calle: Av. Ferroviaria, Capitán Ustáriz<br>
                                 Telefono: 4265645
-                                Celular: 70356236
+                                Celular/WhatsApp: 70356236<br>
                                 Pagina: <a href="http://www.cerecan.org" >http://www.cerecan.org</a>
                             </p>
                         </div>

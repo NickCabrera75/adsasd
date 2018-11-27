@@ -362,4 +362,9 @@ $(document).ready(function() {
         $('#mc_embed_signup').find('form').ajaxChimp();
     });
 
+    $('select').on('change', function(){
+        var selectValor = '#' +$(this).val();
+        $('#centros').children('div').hide();
+        $('#centros').children(selectValor).show();
+    });
 });
