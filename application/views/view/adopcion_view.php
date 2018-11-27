@@ -19,17 +19,17 @@
                                             {
                                                 foreach ($animales->result() as $row)
                                                 {
-                                                    if($row->IdMascotas==id){?>
+                                                    ?>
                                             <div class="row align-items-center">
+                                                
                                                 <div class="col-lg- home-about-left no-padding">
-                                                    <img src="<?php echo base_url(); ?><?php echo $row->Imagen; ?>" alt="" class="rounded">
+                                                    <img src="<?php echo base_url(); ?>images/adoptar/<?php echo $row->Imagen; ?>" alt="" class="rounded">
                                                 </div>
                                                 <div class="col-lg-6 home-about-right no-padding">
-                                                    <!--<a data-toggle="modal" data-target="#formadopcion" href="">
-                                                        <h1>
+                                                    
                                                             <?php echo $row->Nombre; ?>
-                                                        </h1>
-                                                    </a>-->
+
+                                                       
                                                     <ul class="thumbnail-boxed-meta">
                                                         <li><span class="icon icon-xs icon-tan-hide material-icons-event_available"></span><span>Edad: <?php echo $row->Edad; ?> anios</span></li>
                                                         <li><span class="icon icon-xs icon-tan-hide material-icons-done"></span><span>Color: <?php echo $row->Color; ?></span></li>
@@ -47,7 +47,7 @@
                                                 </div>
                                             </div>
                                             <?php
-                                                    }
+                                                    
                                                 }
                                             }?>
                                         </div>
@@ -171,11 +171,12 @@
 				<div class="container-fluid">
 					<div class="row align-items-center">	
 						<div class="col-lg- home-about-left no-padding">
-							 <a data-toggle="modal" data-target="#Perfilmascota" href=""><img src="<?php echo base_url(); ?><?php echo $row->Imagen; ?>" alt="" class="rounded"></a>
+							 <a data-toggle="modal" data-target="#Perfilmascota" href=""><img src="<?php echo base_url(); ?>images/adoptar/<?php echo $row->Imagen; ?>" alt="" class="rounded"></a>
 						</div>
 						<div class="col-lg-6 home-about-right no-padding">
 							<h1>
 								 <?php echo $row->Nombre; ?>
+                                <?php echo $row->IdMascotas; ?>
 							</h1>
 							<ul class="thumbnail-boxed-meta">
 								<li><span class="icon icon-xs icon-tan-hide material-icons-event_available"></span><span>Edad: <?php echo $row->Edad; ?> anios</span></li>

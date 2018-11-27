@@ -18,7 +18,7 @@
 
                             foreach ($animales->result() as $row)
                             {
-                                if (($row->Tipo)==0)
+                                if (($row->Tipo)==1)
 {
                          ?>
 			
@@ -28,7 +28,7 @@
 				<div class="container-fluid">
 					<div class="row align-items-center">	
 						<div class="col-lg- home-about-left no-padding">
-							<img src="<?php echo base_url(); ?><?php echo $row->Imagen; ?>" alt="" class="rounded">
+							<img src="<?php echo base_url(); ?>images/adoptar/<?php echo $row->Imagen; ?>" alt="" class="rounded">
 						</div>
 						<div class="col-lg-6 home-about-right no-padding">
 							<h1>

@@ -26,7 +26,7 @@
             {
               ?>
                 <div class="single-image-carusel">
-                    <img class="img-fluid" src="<?php echo base_url(); ?><?php echo $row->Imagen; ?>" alt="">
+                    <img class="img-fluid" src="<?php echo base_url(); ?>images/adoptar/<?php echo $row->Imagen; ?>" alt="">
                 </div>
                 <?php
             }

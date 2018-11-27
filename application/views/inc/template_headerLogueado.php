@@ -28,7 +28,9 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-9">
-                    <form action="http://localhost:8080/codesafesoft/daradopcion/agregarbd" enctype="multipart/form-data" method="post" accept-charset="utf-8">                        <div class="form-row">
+                   <?php
+  echo form_open_multipart('daradopcion/agregarbd');
+  ?>                        <div class="form-row">
                             <label name="IdCuenta"></label>
                         </div>
                         <div class="form-group">
@@ -127,13 +129,15 @@
                             <input tabindex="-1" class="filestyle form-control" id="filestyle-0" style="position: absolute; left: -9999px;" type="file" data-classinput="form-control inline" data-classbutton="btn btn-default">
                             <div tabindex="0" class="bootstrap-filestyle" style="display: inline;">
 
-                                <h5>(PROXIMAMENTE) Foto de perfil</h5>
-                          
-                            <input disabled type="file" name="" accept="images/usuarios/*.jpg ">
+                                <h5>Foto de perfil</h5>
+
+                        <input type="file" name="imagenes" id="imagenes">
                             </div>
                         </div>
                         <button class="btn btn-outline-warning btn-default" type="submit">Registrar Mascota</button>
-                    </form>   
+                   <?php
+  echo form_close();
+  ?>   
                 </div>
 				
             </div>

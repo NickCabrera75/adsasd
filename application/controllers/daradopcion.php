@@ -42,42 +42,36 @@ class Daradopcion extends CI_Controller {
   }
   public function agregarbd()
   {
-    /*if($this->input->post())
-		{
+    
+$config['upload_path']          = './images/adoptar';
+		$config['allowed_types']        = 'jpg|png';
+		$config['max_size']             = 1000;
+		$config['max_width']            = 1024;
+		$config['max_height']           = 768;
+		$config['encrypt_name'] 		=TRUE;
+		$this->load->library('upload', $config);
+		$this->upload->do_upload('imagenes');
+		$data = $this->upload->data();
+		
+	     $imagenes=$data['file_name'];
+		if (empty($imagenes)) {
+         $imagenes="default.png";}
+   
       
-			$Nombre = $this->db->escape($_POST["Nombre"]);
-			$Edad = $this->db->escape($_POST["Edad"]);
-      $Description = $this->db->escape($_POST["Description"]);
-      $Raza = $this->db->escape($_POST["Raza"]);
-      $Color = $this->db->escape($_POST["Color"]);
-      $Tamaño = $this->db->escape($_POST["Tamaño"]);
-      $Pedigree = $this->db->escape($_POST["Pedigree"]);
-      $Imagen = $this->db->escape($_POST["Imagen"]);
-      $IdCuenta = $this->db->escape($_POST["IdCuenta"]);
-      $Tipo = $this->db->escape($_POST["Tipo"]);
-      $Sexo = $this->db->escape($_POST["Sexo"]);
-
-      /*if ($this->animales_model->agregaranimales()
-      {
-				header("Location:".base_url()."employees");
-			}
-    }*/
-
-    $data['Nombre']=$_POST['Nombre'];
-    $data['Edad']=$_POST['Edad'];
-    $data['Description']=$_POST['Description'];
-    $data['Raza']=$_POST['Raza'];
-    $data['Color']=$_POST['Color'];
-    $data['Tamano']=$_POST['Tamano'];
-    $data['Pedigree']=$_POST['Pedigree'];
-    /*$data['Imagen']=$_POST['Imagen'];
-    $data['idCuenta']=$_POST['IdCuenta'];*/
-    $data['Tipo']=$_POST['Tipo'];
-    $data['Sexo']=$_POST['Sexo'];
-
-
+      $data = array(
+          'Imagen' => $imagenes,
+          'Nombre' => $this->input->post('Nombre'),
+          'Edad' => $this->input->post('Edad'),
+          'Description' => $this->input->post('Description'),
+          'Raza' => $this->input->post('Raza'),
+          'Color' => $this->input->post('Color'),
+          'Tamano' => $this->input->post('Tamano'),
+          'Pedigree' => $this->input->post('Pedigree'),
+          'Tipo' => $this->input->post('Tipo'),
+          'Sexo' => $this->input->post('Sexo'),
+          );
     $this->animales_model->agregaranimales($data);
-    redirect('animales/index','refresh');
+      redirect('animales/index','refresh');
   }
   /*public function eliminarbd()
   {
