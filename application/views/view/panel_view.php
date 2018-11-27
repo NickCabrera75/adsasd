@@ -92,16 +92,18 @@
                 <div class="col-lg-8 posts-list">
                     <div class="single-post row">
                         <div class="col-lg-12">
-                            <a href="<?php echo base_url(); ?>index.php/adopcion">Ver Mascotas</a>
+                            <a href="<?php echo base_url(); ?>index.php/adopcion">Ver todas las Mascotas</a>
                             <div class="feature-img">
                                 <img class="img-fluid" src="img/blog/feature-img1.jpg" alt="">
                             </div>
                             
                         </div>
                         
-                     <h2><?PHP echo $this->session->userdata('Nombres')?> <?PHP echo $this->session->userdata('PrimerApellido')?> NO TIENE PUBLICACIONES</h2>
+                     <h2>Macotas de <?PHP echo $this->session->userdata('Nombres')?> <?PHP echo $this->session->userdata('PrimerApellido')?> </h2>
+                        <br /><br />
                         
-                       
+                      
+                        <?php echo $this->session->userdata('idMascota') ?>
                     </div>
 
                 

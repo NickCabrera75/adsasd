@@ -17,6 +17,7 @@ class Usuario_model extends CI_Model {
     $this->db->from('usuarios');
     return $this->db->get();
   }
+    
   public function recuperarusuario($idusuario)
   {
     $this->db->select('*');

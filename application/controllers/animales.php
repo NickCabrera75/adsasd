@@ -8,8 +8,7 @@ class Animales extends CI_Controller {
   }
   public function index()
   {
-    $listaanimales=$this->animales_model->listaanimales();
-    $data['animales']=$listaanimales;
+     $data = array('animales' => $this->animales_model->listaanimales());
     $this->load->view('inc/template_header');
     $this->load->view('view/animales_view',$data);
     $this->load->view('inc/template_footer');

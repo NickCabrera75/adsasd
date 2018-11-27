@@ -1,14 +1,19 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Usuario extends CI_Controller {
+    
 public function __construct(){
 		parent::__construct();
 		$this->load->model("usuario_model");
+    
+     
 	}
   public function index()
   {
+      
 		if($this->session->userdata('login'))
             {
+            
               redirect('usuario/panel','refresh');
 
             }
@@ -34,6 +39,8 @@ public function __construct(){
           {
             if(($row->login)==$login && ($row->password)==$password)
             {
+               
+                
               $this->session->set_userdata('idusuarios',$row->idusuarios);
                 $this->session->set_userdata('Imagen',$row->Imagen);
 							$this->session->set_userdata('Nombres',$row->Nombres);
@@ -42,6 +49,9 @@ public function __construct(){
 							$this->session->set_userdata('Email',$row->Email);
                 $this->session->set_userdata('login',$row->login);
                 $this->session->set_userdata('tipo',$row->tipo);
+                                
+
+                 
                 redirect('usuario/panel','refresh');
             }
           }
@@ -54,10 +64,9 @@ public function __construct(){
 
  public function panel()
   {
+     
     if($this->session->userdata('login'))
             {
-
-              
     $this->load->view('inc/template_headerLogueado');
     $this->load->view('view/panel_view');
     $this->load->view('inc/template_footer');
