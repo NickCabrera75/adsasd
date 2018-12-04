@@ -137,7 +137,7 @@
                 <span class="lnr lnr-user"></span>
                 <a href="#">
                   <h4>
-                    Registrarse\Iniciar Sesion
+                    Registrarse/Iniciar Sesion
                   </h4>
                 </a>
                 <p>

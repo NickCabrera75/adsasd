@@ -207,7 +207,7 @@
                 <div class="row">
                   <ul class="col footer-nav">
                     <li>Animales SOS interviene en este caso</li>
-                    <li>Un solo dia y 17vidas en condicion critica</li>
+                    <li>Un solo dia y 17 vidas en condicion critica</li>
 
                   </ul>
                 </div>
