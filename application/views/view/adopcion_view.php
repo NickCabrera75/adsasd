@@ -171,26 +171,32 @@
 				<div class="container-fluid">
 					<div class="row align-items-center">	
 						<div class="col-lg- home-about-left no-padding">
-							 <a data-toggle="modal" data-target="#Perfilmascota" href=""><img src="<?php echo base_url(); ?>images/adoptar/<?php echo $row->Imagen; ?>" alt="" class="rounded"></a>
+							 <a href="<?php echo base_url(); ?>perfil?id=<?php echo $row->IdMascotas?>"><img src="<?php echo base_url(); ?>images/adoptar/<?php echo $row->Imagen; ?>" alt="" class="rounded"></a>
 						</div>
 						<div class="col-lg-6 home-about-right no-padding">
 							<h1>
-								 <?php echo $row->Nombre; ?>
-                                <?php echo $row->IdMascotas; ?>
-							</h1>
-							<ul class="thumbnail-boxed-meta">
-								<li><span class="icon icon-xs icon-tan-hide material-icons-event_available"></span><span>Edad: <?php echo $row->Edad; ?> anios</span></li>
-								<li><span class="icon icon-xs icon-tan-hide material-icons-done"></span><span>Color: <?php echo $row->Color; ?></span></li>
-								<li><span class="icon icon-xs icon-tan-hide material-icons-place"></span><span>Raza: <?php echo $row->Raza; ?></span></li>
-							  </ul>
+								 <a href="<?php echo base_url(); ?>perfil?id=<?php echo $row->IdMascotas?>"><?php echo $row->Nombre; ?></a>
+							</h1>    
 							<p>
 								 Descripcion: <?php echo $row->Description; ?>
 							</p>
 							
 							<label class="text-uppercase text-<?php if (($row->Estado)==0){echo 'success';} else{echo 'danger';}?>"> <?php if (($row->Estado)==0){echo 'Disponible para ser adoptado';} else{echo 'El animal ya fue adoptado';}?></label>
-                            <?php if (($row->Estado)==0){echo '<div class="col-lg-8 callto-top-right">
-								<a  data-toggle="modal" data-target="#formadopcion" href=""   class="primary-btn">Llene el formulario para adoptar</a>
-							</div>';}?>
+                            <?php if (($row->Estado)==0){echo '<div class="col-lg-8 callto-top-right"></div>';}?>
+                            
+                            
+                            <!--
+                        
+                        <div class="card-body">
+                            <h4 class="card-title">Centro de Adopciones San Martin de Porres</h4>
+                            <p class="card-text">
+                                Ciudad: Cochabamba
+                                Calle: Ushpa Ushpa<br>
+                                Telefono: 4264545
+                                Celular/WhatsApp: 75464063<br>
+                            </p>
+                        </div>
+                    </div>-->
 														
 						</div>
 					</div>
