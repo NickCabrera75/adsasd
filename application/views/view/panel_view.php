@@ -102,9 +102,8 @@
                         
                      <h2>Macotas de <?PHP echo $this->session->userdata('Nombres')?> <?PHP echo $this->session->userdata('PrimerApellido')?> </h2>
                         <br /><br />
+                       
                         
-                      
-                        <?php echo $this->session->userdata('idMascota') ?>
                     </div>
 
                 

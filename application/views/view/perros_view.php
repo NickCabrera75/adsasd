@@ -44,10 +44,10 @@
 								 Descripcion: <?php echo $row->Description; ?>
 							</p>
 							
-							<label class="text-uppercase text-<?php if (($row->Estado)==0){echo 'success';} else{echo 'danger';}?>"> <?php if (($row->Estado)==0){echo 'Disponible para ser adoptado';} else{echo 'El animal ya fue adoptado';}?></label>
+							<!--<label class="text-uppercase text-<?php /*if (($row->Estado)==0){echo 'success';} else{echo 'danger';}?>"> <?php if (($row->Estado)==0){echo 'Disponible para ser adoptado';} else{echo 'El animal ya fue adoptado';}?></label>
                             <?php if (($row->Estado)==0){echo '<div class="col-lg-8 callto-top-right">
 								<a  data-toggle="modal" data-target="#formadopcion" href=""   class="primary-btn">Llene el formulario para adoptar</a>
-							</div>';}?><br>
+							</div>';}*/?><br>-->
 														
 						</div>
 					</div>

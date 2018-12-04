@@ -6,7 +6,8 @@
     <?php include("templates/template_head.php"); ?>
 </head>
 <body>
-   <!--inicia sesion--> <div id="iniciasesion" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="display: none;" aria-hidden="true">
+   <!--inicia sesion--> 
+    <div id="iniciasesion" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="display: none;" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -108,6 +109,7 @@
                                     </select><div tabindex="0" class="nice-select"><span class="current">Seleccione el tamaño de su mascota</span><ul class="list"><li class="option selected" data-display="Seleccione el tamaño de su mascota" data-value="Seleccione el tamaño de su mascota">Seleccione el tamaño de su mascota</li><li class="option" data-value="1">Pequeño</li><li class="option" data-value="2">Mediano</li><li class="option" data-value="3">Grande</li></ul></div>
                                 </div>
                             </div>
+                            
                             <div class="col-6 mb-30">
                                 <label for="Pedigree">Pedigree</label>
                                 <div class="select-option" id="service-select" "="">
@@ -119,6 +121,7 @@
                                 </div>
                             </div>
                         </div>
+                    
                         <div class="form-group">
                             <label for="Descripcion">Descripcion</label>
                             <textarea name="Description" class="form-control" id="exampleTextarea" placeholder="Describe un poco del caracter de tu mascota" rows="5"></textarea>

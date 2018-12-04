@@ -5,6 +5,7 @@ class Usuario extends CI_Controller {
 public function __construct(){
 		parent::__construct();
 		$this->load->model("usuario_model");
+    $this->load->model('animales_model');
     
      
 	}
@@ -13,7 +14,8 @@ public function __construct(){
       
 		if($this->session->userdata('login'))
             {
-            
+             $listaanimales=$this->animales_model->listaanimales();
+    $data['animales']=$listaanimales;
               redirect('usuario/panel','refresh');
 
             }
